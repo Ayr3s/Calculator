@@ -12,5 +12,17 @@ namespace Calculator
         {
             return n1 + n2;
         }
+        public static Double Sub(Double n1, Double n2)
+        {
+            return n1 - n2;
+        }
+        public static Double Mul(Double n1, Double n2)
+        {
+            return n1 * n2;
+        }
+        public static Double Div(Double n1, Double n2)
+        {
+            return n1 / n2;
+        }
     }
 }

@@ -73,13 +73,16 @@ namespace Calculator
                     result.Text = Operators.Add(value, Double.Parse(result.Text)).ToString();
                     break;
                 case "-":
-                    result.Text = (value - Double.Parse(result.Text)).ToString();
+                    //result.Text = (value - Double.Parse(result.Text)).ToString();
+                    result.Text = Operators.Sub(value, Double.Parse(result.Text)).ToString();
                     break;
                 case "*":
-                    result.Text = (value * Double.Parse(result.Text)).ToString();
+                    //result.Text = (value * Double.Parse(result.Text)).ToString();
+                    result.Text = Operators.Mul(value, Double.Parse(result.Text)).ToString();
                     break;
                 case "/":
-                    result.Text = (value / Double.Parse(result.Text)).ToString();
+                    //result.Text = (value / Double.Parse(result.Text)).ToString();
+                    result.Text = Operators.Div(value, Double.Parse(result.Text)).ToString();
                     break;
                 default:
                     break;
@@ -93,7 +96,7 @@ namespace Calculator
         {
             result.Text = "0";
             value = 0;
-            equasion.Text = "";
+            equasion.Text = "Nothing yet!";
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
@@ -144,6 +147,9 @@ namespace Calculator
                     break;
                 case "=":
                     enter.PerformClick();
+                    break;
+                case ",":
+                    dot.PerformClick();
                     break;
                 default:
                     break;
