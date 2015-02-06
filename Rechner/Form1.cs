@@ -10,15 +10,22 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class Form1 : System.Windows.Forms.Form
     {
-        Double value = 0;
+        Double valuee = 0;
         String operation = "";
         bool operation_pressed = false;
+        bool sqrt_pressed = false;
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public Form1(string textFromForm2,string textFroForm22)
+        {
+            InitializeComponent();
+            result.Text = Operators.Wur(int.Parse(textFroForm22), int.Parse(textFromForm2)).ToString();
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -47,19 +54,19 @@ namespace Calculator
         {
             Button b = (Button)sender;
 
-            if(value != 0)
+            if(valuee != 0)
             {
                 enter.PerformClick();
                 operation_pressed = true;
                 operation = b.Text;
-                equasion.Text = value + " " + operation;
+                equasion.Text = valuee + " " + operation;
             }
             else
             {
                 operation = b.Text;
-                value = Double.Parse(result.Text);
+                valuee = Double.Parse(result.Text);
                 operation_pressed = true;
-                equasion.Text = value + " " + operation;
+                equasion.Text = valuee + " " + operation;
             }
         }
 
@@ -70,32 +77,32 @@ namespace Calculator
             {
                 case "+":
                     //result.Text = (value + Double.Parse(result.Text)).ToString();
-                    result.Text = Operators.Add(value, Double.Parse(result.Text)).ToString();
+                    result.Text = Operators.Add(valuee, Double.Parse(result.Text)).ToString();
                     break;
                 case "-":
                     //result.Text = (value - Double.Parse(result.Text)).ToString();
-                    result.Text = Operators.Sub(value, Double.Parse(result.Text)).ToString();
+                    result.Text = Operators.Sub(valuee, Double.Parse(result.Text)).ToString();
                     break;
                 case "*":
                     //result.Text = (value * Double.Parse(result.Text)).ToString();
-                    result.Text = Operators.Mul(value, Double.Parse(result.Text)).ToString();
+                    result.Text = Operators.Mul(valuee, Double.Parse(result.Text)).ToString();
                     break;
                 case "/":
                     //result.Text = (value / Double.Parse(result.Text)).ToString();
-                    result.Text = Operators.Div(value, Double.Parse(result.Text)).ToString();
+                    result.Text = Operators.Div(valuee, Double.Parse(result.Text)).ToString();
                     break;
                 default:
                     break;
             }
 
-            value = Double.Parse(result.Text);
+            valuee = Double.Parse(result.Text);
             operation = "";
         }
 
         private void Clear_Click(object sender, EventArgs e)
         {
             result.Text = "0";
-            value = 0;
+            valuee = 0;
             equasion.Text = "Nothing yet!";
         }
 
@@ -155,6 +162,38 @@ namespace Calculator
                     break;
 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_MouseHover(object sender, EventArgs e)
+        {
+            /*Button b = (Button)sender;
+            b.BackColor = Color.Blue;*/
+        }
+
+        private void sqrt_Click(object sender, EventArgs e)
+        {
+            /*if(sqrt_pressed)
+            {
+                //result.Text = Operators.Wur(Double.Parse(frm1.Grad)).ToString();
+                result.Text = frm.Grad;
+                sqrt_pressed = false;
+            }
+            else
+            {
+                new Form2().Show();
+                sqrt_pressed = true;
+            }*/
+            new Form2().Show();
+        }
+
+        private void result_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
