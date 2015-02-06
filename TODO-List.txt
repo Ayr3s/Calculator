@@ -1,0 +1,8 @@
+TODO Liste:
+
+	-Wurzel Funktion fehlerhaft
+	-Window schließen bie Wurzelziehen
+	-neue weitere Funktionen
+	-hoverfarbe hinzufügen
+	-design anpassen
+	-form2 anpassen an farbschema
