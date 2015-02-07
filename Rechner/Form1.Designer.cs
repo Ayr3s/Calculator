@@ -53,6 +53,7 @@
             this.result = new System.Windows.Forms.TextBox();
             this.Con = new System.Windows.Forms.Label();
             this.equasion = new System.Windows.Forms.Label();
+            this.Ende = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // seven
@@ -345,7 +346,9 @@
             // enter
             // 
             this.enter.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.enter.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.enter.Cursor = System.Windows.Forms.Cursors.Default;
+            this.enter.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.enter.FlatAppearance.BorderSize = 50;
             this.enter.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.enter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.enter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
@@ -356,7 +359,7 @@
             this.enter.Size = new System.Drawing.Size(53, 106);
             this.enter.TabIndex = 17;
             this.enter.Text = "=";
-            this.enter.UseVisualStyleBackColor = false;
+            this.enter.UseVisualStyleBackColor = true;
             this.enter.Click += new System.EventHandler(this.enter_Click);
             this.enter.MouseHover += new System.EventHandler(this.Button_MouseHover);
             // 
@@ -443,7 +446,7 @@
             this.sqrt.Name = "sqrt";
             this.sqrt.Size = new System.Drawing.Size(53, 49);
             this.sqrt.TabIndex = 23;
-            this.sqrt.Text = "sqrt";
+            this.sqrt.Text = "√";
             this.sqrt.UseVisualStyleBackColor = false;
             this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
             this.sqrt.MouseHover += new System.EventHandler(this.Button_MouseHover);
@@ -482,12 +485,25 @@
             this.equasion.Size = new System.Drawing.Size(0, 17);
             this.equasion.TabIndex = 26;
             // 
+            // Ende
+            // 
+            this.Ende.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Ende.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Ende.Location = new System.Drawing.Point(17, 311);
+            this.Ende.Name = "Ende";
+            this.Ende.Size = new System.Drawing.Size(359, 23);
+            this.Ende.TabIndex = 27;
+            this.Ende.Text = "Das Programm beenden !";
+            this.Ende.UseVisualStyleBackColor = false;
+            this.Ende.Click += new System.EventHandler(this.Ende_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(393, 326);
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.ClientSize = new System.Drawing.Size(393, 346);
+            this.Controls.Add(this.Ende);
             this.Controls.Add(this.equasion);
             this.Controls.Add(this.Con);
             this.Controls.Add(this.result);
@@ -516,8 +532,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(409, 365);
-            this.MinimumSize = new System.Drawing.Size(409, 365);
+            this.MaximumSize = new System.Drawing.Size(409, 385);
+            this.MinimumSize = new System.Drawing.Size(409, 385);
             this.Name = "Form1";
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -554,6 +570,7 @@
         public System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label Con;
         private System.Windows.Forms.Label equasion;
+        private System.Windows.Forms.Button Ende;
     }
 }
 

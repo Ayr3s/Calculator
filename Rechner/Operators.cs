@@ -24,9 +24,9 @@ namespace Calculator
         {
             return n1 / n2;
         }
-        public static int Wur(int n1, int n2)
+        public static Double Wur(Double n1, Double n2)
         {
-            return n1 ^ (1/n2);
+            return Math.Pow(n1, (1/n2));
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Calculator
         public Form1(string textFromForm2,string textFroForm22)
         {
             InitializeComponent();
-            result.Text = Operators.Wur(int.Parse(textFroForm22), int.Parse(textFromForm2)).ToString();
+            result.Text = Operators.Wur(Double.Parse(textFroForm22), Double.Parse(textFromForm2)).ToString();
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -189,11 +189,17 @@ namespace Calculator
                 sqrt_pressed = true;
             }*/
             new Form2().Show();
+            Hide();
         }
 
         private void result_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Ende_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
