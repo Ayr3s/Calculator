@@ -39,7 +39,7 @@ namespace Calculator
             Form1 frm = new Form1(boxtext.Text,Zahl.Text);
             frm.ShowDialog();
             frm.Close();
-            Hide();
+            this.Hide();
         }
     }
 }

@@ -37,6 +37,7 @@
             // 
             // boxtext
             // 
+            this.boxtext.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.boxtext.Location = new System.Drawing.Point(147, 13);
             this.boxtext.Name = "boxtext";
             this.boxtext.Size = new System.Drawing.Size(100, 20);
@@ -44,7 +45,9 @@
             // 
             // Zahl
             // 
+            this.Zahl.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Zahl.Location = new System.Drawing.Point(147, 60);
+            this.Zahl.Margin = new System.Windows.Forms.Padding(0);
             this.Zahl.Name = "Zahl";
             this.Zahl.Size = new System.Drawing.Size(100, 20);
             this.Zahl.TabIndex = 1;
@@ -69,6 +72,8 @@
             // 
             // ok
             // 
+            this.ok.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ok.Location = new System.Drawing.Point(147, 106);
             this.ok.MaximumSize = new System.Drawing.Size(100, 23);
             this.ok.MinimumSize = new System.Drawing.Size(100, 23);
@@ -76,20 +81,21 @@
             this.ok.Size = new System.Drawing.Size(100, 23);
             this.ok.TabIndex = 4;
             this.ok.Text = "Ok!";
-            this.ok.UseVisualStyleBackColor = true;
+            this.ok.UseVisualStyleBackColor = false;
             this.ok.Click += new System.EventHandler(this.ok_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(271, 141);
             this.Controls.Add(this.ok);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Zahl);
             this.Controls.Add(this.boxtext);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(287, 180);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(287, 180);

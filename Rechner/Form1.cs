@@ -26,6 +26,13 @@ namespace Calculator
         {
             InitializeComponent();
             result.Text = Operators.Wur(Double.Parse(textFroForm22), Double.Parse(textFromForm2)).ToString();
+            equasion.Text = "Die " + textFromForm2 + ". Wurzel von " + textFroForm22;
+        }
+        public Form1(string textFromForm2, string textFroForm22, string textFromForm222)
+        {
+            InitializeComponent();
+            result.Text = Operators.Zin(Double.Parse(textFroForm22), Double.Parse(textFromForm2), Double.Parse(textFromForm222)).ToString();
+            equasion.Text = textFroForm22 + "€ haben nach " + textFromForm222 + " Jahren,diesen Betrag erziehlt:";
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -163,12 +170,6 @@ namespace Calculator
 
             }
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button_MouseHover(object sender, EventArgs e)
         {
             /*Button b = (Button)sender;
@@ -197,9 +198,10 @@ namespace Calculator
 
         }
 
-        private void Ende_Click(object sender, EventArgs e)
+        private void Zins_Click(object sender, EventArgs e)
         {
-            Close();
+            new Form3().Show();
+            Hide();
         }
     }
 }

@@ -28,5 +28,10 @@ namespace Calculator
         {
             return Math.Pow(n1, (1/n2));
         }
+        public static Double Zin(Double n1, Double n2, Double n3)
+        {
+            Double n4 = n2 / 100;
+            return n1 * Math.Pow((1+n4), n3);
+        }
     }
 }

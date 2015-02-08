@@ -48,12 +48,11 @@
             this.button18 = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
             this.ClearE = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.Zins = new System.Windows.Forms.Button();
             this.sqrt = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
             this.Con = new System.Windows.Forms.Label();
             this.equasion = new System.Windows.Forms.Label();
-            this.Ende = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // seven
@@ -416,22 +415,23 @@
             this.ClearE.Click += new System.EventHandler(this.ClearE_Click);
             this.ClearE.MouseHover += new System.EventHandler(this.Button_MouseHover);
             // 
-            // button22
+            // Zins
             // 
-            this.button22.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.button22.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaption;
-            this.button22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.button22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button22.Location = new System.Drawing.Point(261, 144);
-            this.button22.Margin = new System.Windows.Forms.Padding(0);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(53, 49);
-            this.button22.TabIndex = 22;
-            this.button22.Text = "1";
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.MouseHover += new System.EventHandler(this.Button_MouseHover);
+            this.Zins.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Zins.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Zins.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.Zins.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.Zins.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Zins.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Zins.Location = new System.Drawing.Point(261, 144);
+            this.Zins.Margin = new System.Windows.Forms.Padding(0);
+            this.Zins.Name = "Zins";
+            this.Zins.Size = new System.Drawing.Size(53, 49);
+            this.Zins.TabIndex = 22;
+            this.Zins.Text = "Zins";
+            this.Zins.UseVisualStyleBackColor = false;
+            this.Zins.Click += new System.EventHandler(this.Zins_Click);
+            this.Zins.MouseHover += new System.EventHandler(this.Button_MouseHover);
             // 
             // sqrt
             // 
@@ -477,38 +477,27 @@
             // 
             // equasion
             // 
-            this.equasion.AutoSize = true;
             this.equasion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equasion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.equasion.Location = new System.Drawing.Point(184, 13);
+            this.equasion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.equasion.Location = new System.Drawing.Point(16, 15);
+            this.equasion.MaximumSize = new System.Drawing.Size(365, 20);
+            this.equasion.MinimumSize = new System.Drawing.Size(365, 20);
             this.equasion.Name = "equasion";
-            this.equasion.Size = new System.Drawing.Size(0, 17);
+            this.equasion.Size = new System.Drawing.Size(365, 20);
             this.equasion.TabIndex = 26;
-            // 
-            // Ende
-            // 
-            this.Ende.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Ende.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Ende.Location = new System.Drawing.Point(17, 311);
-            this.Ende.Name = "Ende";
-            this.Ende.Size = new System.Drawing.Size(359, 23);
-            this.Ende.TabIndex = 27;
-            this.Ende.Text = "Das Programm beenden !";
-            this.Ende.UseVisualStyleBackColor = false;
-            this.Ende.Click += new System.EventHandler(this.Ende_Click);
+            this.equasion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(393, 346);
-            this.Controls.Add(this.Ende);
+            this.ClientSize = new System.Drawing.Size(393, 326);
             this.Controls.Add(this.equasion);
             this.Controls.Add(this.Con);
             this.Controls.Add(this.result);
             this.Controls.Add(this.sqrt);
-            this.Controls.Add(this.button22);
+            this.Controls.Add(this.Zins);
             this.Controls.Add(this.ClearE);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.button18);
@@ -532,11 +521,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(409, 385);
-            this.MinimumSize = new System.Drawing.Size(409, 385);
+            this.MaximumSize = new System.Drawing.Size(409, 365);
+            this.MinimumSize = new System.Drawing.Size(409, 365);
             this.Name = "Form1";
             this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -565,12 +553,11 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button ClearE;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button Zins;
         private System.Windows.Forms.Button sqrt;
         public System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label Con;
         private System.Windows.Forms.Label equasion;
-        private System.Windows.Forms.Button Ende;
     }
 }
 
