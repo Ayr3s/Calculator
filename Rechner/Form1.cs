@@ -203,5 +203,91 @@ namespace Calculator
             new Form3().Show();
             Hide();
         }
+
+        private void darkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.DarkGray;
+            menuStrip1.BackColor = Color.DarkGray;
+        }
+
+        private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.AntiqueWhite;
+            menuStrip1.BackColor = Color.AntiqueWhite;
+        }
+
+        private void darkToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            one.BackColor = Color.Gray;
+            two.BackColor = Color.Gray;
+            three.BackColor = Color.Gray;
+            four.BackColor = Color.Gray;
+            five.BackColor = Color.Gray;
+            six.BackColor = Color.Gray;
+            seven.BackColor = Color.Gray;
+            eight.BackColor = Color.Gray;
+            nine.BackColor = Color.Gray;
+            zero.BackColor = Color.Gray;
+            plus.BackColor = Color.Gray;
+            minus.BackColor = Color.Gray;
+            div.BackColor = Color.Gray;
+            mul.BackColor = Color.Gray;
+            sqrt.BackColor = Color.Gray;
+            dot.BackColor = Color.Gray;
+            Zins.BackColor = Color.Gray;
+            Clear.BackColor = Color.Gray;
+            ClearE.BackColor = Color.Gray;
+            enter.BackColor = Color.Gray;
+        }
+
+        private void whiteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            one.BackColor = Color.White;
+            two.BackColor = Color.White;
+            three.BackColor = Color.White;
+            four.BackColor = Color.White;
+            five.BackColor = Color.White;
+            six.BackColor = Color.White;
+            seven.BackColor = Color.White;
+            eight.BackColor = Color.White;
+            nine.BackColor = Color.White;
+            zero.BackColor = Color.White;
+            plus.BackColor = Color.White;
+            minus.BackColor = Color.White;
+            div.BackColor = Color.White;
+            mul.BackColor = Color.White;
+            sqrt.BackColor = Color.White;
+            dot.BackColor = Color.White;
+            Zins.BackColor = Color.White;
+            Clear.BackColor = Color.White;
+            ClearE.BackColor = Color.White;
+            enter.BackColor = Color.White;
+        }
+
+        private void darkToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.ForeColor = Color.Black;
+            result.ForeColor = Color.Black;
+            equasion.ForeColor = Color.DarkGray;
+        }
+
+        private void whiteToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.ForeColor = Color.White;
+            result.ForeColor = Color.White;
+            equasion.ForeColor = Color.DeepSkyBlue;
+        }
+
+        private void darkToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            result.BackColor = Color.Gray;
+            //equasion.BackColor = Color.DarkGray;
+        }
+
+        private void whiteToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            result.BackColor = Color.AntiqueWhite;
+            //equasion.BackColor = Color.AntiqueWhite;
+        }
     }
 }

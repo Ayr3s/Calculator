@@ -53,6 +53,21 @@
             this.result = new System.Windows.Forms.TextBox();
             this.Con = new System.Windows.Forms.Label();
             this.equasion = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.designToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundcolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontcolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttoncolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fieldcolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // seven
@@ -479,13 +494,127 @@
             // 
             this.equasion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equasion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.equasion.Location = new System.Drawing.Point(16, 15);
+            this.equasion.Location = new System.Drawing.Point(14, 24);
             this.equasion.MaximumSize = new System.Drawing.Size(365, 20);
             this.equasion.MinimumSize = new System.Drawing.Size(365, 20);
             this.equasion.Name = "equasion";
             this.equasion.Size = new System.Drawing.Size(365, 20);
             this.equasion.TabIndex = 26;
             this.equasion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.designToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(393, 24);
+            this.menuStrip1.TabIndex = 27;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // designToolStripMenuItem
+            // 
+            this.designToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backgroundcolorToolStripMenuItem,
+            this.fontcolorToolStripMenuItem,
+            this.buttoncolorToolStripMenuItem,
+            this.fieldcolorToolStripMenuItem});
+            this.designToolStripMenuItem.Name = "designToolStripMenuItem";
+            this.designToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.designToolStripMenuItem.Text = "Design";
+            // 
+            // backgroundcolorToolStripMenuItem
+            // 
+            this.backgroundcolorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.darkToolStripMenuItem,
+            this.whiteToolStripMenuItem});
+            this.backgroundcolorToolStripMenuItem.Name = "backgroundcolorToolStripMenuItem";
+            this.backgroundcolorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.backgroundcolorToolStripMenuItem.Text = "Backgroundcolor";
+            // 
+            // fontcolorToolStripMenuItem
+            // 
+            this.fontcolorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.darkToolStripMenuItem2,
+            this.whiteToolStripMenuItem2});
+            this.fontcolorToolStripMenuItem.Name = "fontcolorToolStripMenuItem";
+            this.fontcolorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.fontcolorToolStripMenuItem.Text = "Fontcolor";
+            // 
+            // buttoncolorToolStripMenuItem
+            // 
+            this.buttoncolorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.darkToolStripMenuItem1,
+            this.whiteToolStripMenuItem1});
+            this.buttoncolorToolStripMenuItem.Name = "buttoncolorToolStripMenuItem";
+            this.buttoncolorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.buttoncolorToolStripMenuItem.Text = "Buttoncolor";
+            // 
+            // fieldcolorToolStripMenuItem
+            // 
+            this.fieldcolorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.darkToolStripMenuItem3,
+            this.whiteToolStripMenuItem3});
+            this.fieldcolorToolStripMenuItem.Name = "fieldcolorToolStripMenuItem";
+            this.fieldcolorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.fieldcolorToolStripMenuItem.Text = "Fieldcolor";
+            // 
+            // darkToolStripMenuItem
+            // 
+            this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
+            this.darkToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.darkToolStripMenuItem.Text = "Dark";
+            this.darkToolStripMenuItem.Click += new System.EventHandler(this.darkToolStripMenuItem_Click);
+            // 
+            // whiteToolStripMenuItem
+            // 
+            this.whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
+            this.whiteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.whiteToolStripMenuItem.Text = "White";
+            this.whiteToolStripMenuItem.Click += new System.EventHandler(this.whiteToolStripMenuItem_Click);
+            // 
+            // darkToolStripMenuItem1
+            // 
+            this.darkToolStripMenuItem1.Name = "darkToolStripMenuItem1";
+            this.darkToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.darkToolStripMenuItem1.Text = "Dark";
+            this.darkToolStripMenuItem1.Click += new System.EventHandler(this.darkToolStripMenuItem1_Click);
+            // 
+            // whiteToolStripMenuItem1
+            // 
+            this.whiteToolStripMenuItem1.Name = "whiteToolStripMenuItem1";
+            this.whiteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.whiteToolStripMenuItem1.Text = "White";
+            this.whiteToolStripMenuItem1.Click += new System.EventHandler(this.whiteToolStripMenuItem1_Click);
+            // 
+            // darkToolStripMenuItem2
+            // 
+            this.darkToolStripMenuItem2.Name = "darkToolStripMenuItem2";
+            this.darkToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.darkToolStripMenuItem2.Text = "Dark";
+            this.darkToolStripMenuItem2.Click += new System.EventHandler(this.darkToolStripMenuItem2_Click);
+            // 
+            // whiteToolStripMenuItem2
+            // 
+            this.whiteToolStripMenuItem2.Name = "whiteToolStripMenuItem2";
+            this.whiteToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.whiteToolStripMenuItem2.Text = "White";
+            this.whiteToolStripMenuItem2.Click += new System.EventHandler(this.whiteToolStripMenuItem2_Click);
+            // 
+            // darkToolStripMenuItem3
+            // 
+            this.darkToolStripMenuItem3.Name = "darkToolStripMenuItem3";
+            this.darkToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.darkToolStripMenuItem3.Text = "Dark";
+            this.darkToolStripMenuItem3.Click += new System.EventHandler(this.darkToolStripMenuItem3_Click);
+            // 
+            // whiteToolStripMenuItem3
+            // 
+            this.whiteToolStripMenuItem3.Name = "whiteToolStripMenuItem3";
+            this.whiteToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.whiteToolStripMenuItem3.Text = "White";
+            this.whiteToolStripMenuItem3.Click += new System.EventHandler(this.whiteToolStripMenuItem3_Click);
             // 
             // Form1
             // 
@@ -518,14 +647,18 @@
             this.Controls.Add(this.one);
             this.Controls.Add(this.zero);
             this.Controls.Add(this.seven);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KeyPreview = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(409, 365);
             this.MinimumSize = new System.Drawing.Size(409, 365);
             this.Name = "Form1";
             this.Text = "Calculator";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -558,6 +691,20 @@
         public System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label Con;
         private System.Windows.Forms.Label equasion;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem designToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backgroundcolorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem whiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fontcolorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buttoncolorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fieldcolorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem whiteToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem whiteToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem whiteToolStripMenuItem3;
     }
 }
 

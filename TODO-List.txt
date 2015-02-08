@@ -2,8 +2,10 @@ TODO Liste:
 
 	-Wurzel Funktion fehlerhaft (done)
 	-Window schließen bie Wurzelziehen
-	-neue weitere Funktionen
+	-neue weitere Funktionen +1
 	-hoverfarbe hinzufügen
 	-design anpassen
 	-form2 anpassen an farbschema
 	-Close Funktion nicht funktionstüchtig
+	-Design Farben fixen
+	-Menu erweitern
