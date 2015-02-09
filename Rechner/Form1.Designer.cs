@@ -56,15 +56,15 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.designToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundcolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontcolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttoncolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fieldcolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.whiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.darkToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.whiteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontcolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.whiteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttoncolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fieldcolorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.whiteToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -492,6 +492,7 @@
             // 
             // equasion
             // 
+            this.equasion.BackColor = System.Drawing.Color.Transparent;
             this.equasion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equasion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.equasion.Location = new System.Drawing.Point(14, 24);
@@ -533,6 +534,20 @@
             this.backgroundcolorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.backgroundcolorToolStripMenuItem.Text = "Backgroundcolor";
             // 
+            // darkToolStripMenuItem
+            // 
+            this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
+            this.darkToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.darkToolStripMenuItem.Text = "Dark";
+            this.darkToolStripMenuItem.Click += new System.EventHandler(this.darkToolStripMenuItem_Click);
+            // 
+            // whiteToolStripMenuItem
+            // 
+            this.whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
+            this.whiteToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.whiteToolStripMenuItem.Text = "White";
+            this.whiteToolStripMenuItem.Click += new System.EventHandler(this.whiteToolStripMenuItem_Click);
+            // 
             // fontcolorToolStripMenuItem
             // 
             this.fontcolorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -541,6 +556,20 @@
             this.fontcolorToolStripMenuItem.Name = "fontcolorToolStripMenuItem";
             this.fontcolorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.fontcolorToolStripMenuItem.Text = "Fontcolor";
+            // 
+            // darkToolStripMenuItem2
+            // 
+            this.darkToolStripMenuItem2.Name = "darkToolStripMenuItem2";
+            this.darkToolStripMenuItem2.Size = new System.Drawing.Size(105, 22);
+            this.darkToolStripMenuItem2.Text = "Dark";
+            this.darkToolStripMenuItem2.Click += new System.EventHandler(this.darkToolStripMenuItem2_Click);
+            // 
+            // whiteToolStripMenuItem2
+            // 
+            this.whiteToolStripMenuItem2.Name = "whiteToolStripMenuItem2";
+            this.whiteToolStripMenuItem2.Size = new System.Drawing.Size(105, 22);
+            this.whiteToolStripMenuItem2.Text = "White";
+            this.whiteToolStripMenuItem2.Click += new System.EventHandler(this.whiteToolStripMenuItem2_Click);
             // 
             // buttoncolorToolStripMenuItem
             // 
@@ -551,6 +580,20 @@
             this.buttoncolorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.buttoncolorToolStripMenuItem.Text = "Buttoncolor";
             // 
+            // darkToolStripMenuItem1
+            // 
+            this.darkToolStripMenuItem1.Name = "darkToolStripMenuItem1";
+            this.darkToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
+            this.darkToolStripMenuItem1.Text = "Dark";
+            this.darkToolStripMenuItem1.Click += new System.EventHandler(this.darkToolStripMenuItem1_Click);
+            // 
+            // whiteToolStripMenuItem1
+            // 
+            this.whiteToolStripMenuItem1.Name = "whiteToolStripMenuItem1";
+            this.whiteToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
+            this.whiteToolStripMenuItem1.Text = "White";
+            this.whiteToolStripMenuItem1.Click += new System.EventHandler(this.whiteToolStripMenuItem1_Click);
+            // 
             // fieldcolorToolStripMenuItem
             // 
             this.fieldcolorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -560,59 +603,17 @@
             this.fieldcolorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.fieldcolorToolStripMenuItem.Text = "Fieldcolor";
             // 
-            // darkToolStripMenuItem
-            // 
-            this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
-            this.darkToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.darkToolStripMenuItem.Text = "Dark";
-            this.darkToolStripMenuItem.Click += new System.EventHandler(this.darkToolStripMenuItem_Click);
-            // 
-            // whiteToolStripMenuItem
-            // 
-            this.whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            this.whiteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.whiteToolStripMenuItem.Text = "White";
-            this.whiteToolStripMenuItem.Click += new System.EventHandler(this.whiteToolStripMenuItem_Click);
-            // 
-            // darkToolStripMenuItem1
-            // 
-            this.darkToolStripMenuItem1.Name = "darkToolStripMenuItem1";
-            this.darkToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.darkToolStripMenuItem1.Text = "Dark";
-            this.darkToolStripMenuItem1.Click += new System.EventHandler(this.darkToolStripMenuItem1_Click);
-            // 
-            // whiteToolStripMenuItem1
-            // 
-            this.whiteToolStripMenuItem1.Name = "whiteToolStripMenuItem1";
-            this.whiteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.whiteToolStripMenuItem1.Text = "White";
-            this.whiteToolStripMenuItem1.Click += new System.EventHandler(this.whiteToolStripMenuItem1_Click);
-            // 
-            // darkToolStripMenuItem2
-            // 
-            this.darkToolStripMenuItem2.Name = "darkToolStripMenuItem2";
-            this.darkToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.darkToolStripMenuItem2.Text = "Dark";
-            this.darkToolStripMenuItem2.Click += new System.EventHandler(this.darkToolStripMenuItem2_Click);
-            // 
-            // whiteToolStripMenuItem2
-            // 
-            this.whiteToolStripMenuItem2.Name = "whiteToolStripMenuItem2";
-            this.whiteToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.whiteToolStripMenuItem2.Text = "White";
-            this.whiteToolStripMenuItem2.Click += new System.EventHandler(this.whiteToolStripMenuItem2_Click);
-            // 
             // darkToolStripMenuItem3
             // 
             this.darkToolStripMenuItem3.Name = "darkToolStripMenuItem3";
-            this.darkToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.darkToolStripMenuItem3.Size = new System.Drawing.Size(105, 22);
             this.darkToolStripMenuItem3.Text = "Dark";
             this.darkToolStripMenuItem3.Click += new System.EventHandler(this.darkToolStripMenuItem3_Click);
             // 
             // whiteToolStripMenuItem3
             // 
             this.whiteToolStripMenuItem3.Name = "whiteToolStripMenuItem3";
-            this.whiteToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.whiteToolStripMenuItem3.Size = new System.Drawing.Size(105, 22);
             this.whiteToolStripMenuItem3.Text = "White";
             this.whiteToolStripMenuItem3.Click += new System.EventHandler(this.whiteToolStripMenuItem3_Click);
             // 

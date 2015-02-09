@@ -37,8 +37,11 @@ namespace Calculator
 
         private void button_Click(object sender, EventArgs e)
         {
-            if ((result.Text == "0")||(operation_pressed))
+            if ((result.Text == "0") || (operation_pressed) || (equasion.Text == "Nothing yet!"))
+            {
                 result.Clear();
+                equasion.Text = "";
+            }
 
             operation_pressed = false;
 
@@ -68,6 +71,7 @@ namespace Calculator
                 operation = b.Text;
                 equasion.Text = valuee + " " + operation;
             }
+
             else
             {
                 operation = b.Text;
@@ -79,7 +83,7 @@ namespace Calculator
 
         private void enter_Click(object sender, EventArgs e)
         {
-            equasion.Text = "";
+            equasion.Text = "Nothing yet!";
             switch(operation)
             {
                 case "+":
