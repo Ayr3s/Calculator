@@ -390,8 +390,9 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(53, 49);
             this.button18.TabIndex = 18;
-            this.button18.Text = "1";
+            this.button18.Text = "Log";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             this.button18.MouseHover += new System.EventHandler(this.Button_MouseHover);
             // 
             // Clear

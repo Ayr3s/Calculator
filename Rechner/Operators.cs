@@ -33,5 +33,9 @@ namespace Calculator
             Double n4 = n2 / 100;
             return n1 * Math.Pow((1+n4), n3);
         }
+        public static Double Log(Double n1, Double n2)
+        {
+            return Math.Log(n2, n1);
+        }
     }
 }

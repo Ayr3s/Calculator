@@ -27,12 +27,21 @@ namespace Calculator
             InitializeComponent();
             result.Text = Operators.Wur(Double.Parse(textFroForm22), Double.Parse(textFromForm2)).ToString();
             equasion.Text = "Die " + textFromForm2 + ". Wurzel von " + textFroForm22;
+            operation_pressed = true;
         }
         public Form1(string textFromForm2, string textFroForm22, string textFromForm222)
         {
             InitializeComponent();
             result.Text = Operators.Zin(Double.Parse(textFroForm22), Double.Parse(textFromForm2), Double.Parse(textFromForm222)).ToString();
             equasion.Text = textFroForm22 + "€ haben nach " + textFromForm222 + " Jahren,diesen Betrag erziehlt:";
+            operation_pressed = true;
+        }
+        public Form1(string textFromForm2, string textFroForm22, string n1, string n2)
+        {
+            InitializeComponent();
+            result.Text = Operators.Log(Double.Parse(textFroForm22), Double.Parse(textFromForm2)).ToString();
+            equasion.Text = "Der Logarithmus der Zahl " + textFroForm22 + " mit der Basis " + textFromForm2 + ":";
+            operation_pressed = true;
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -58,6 +67,7 @@ namespace Calculator
         private void ClearE_Click(object sender, EventArgs e)
         {
             result.Text = "0";
+            equasion.Text = "Nothing yet!";
         }
 
         private void operator_click(object sender, EventArgs e)
@@ -242,6 +252,7 @@ namespace Calculator
             Clear.BackColor = Color.Gray;
             ClearE.BackColor = Color.Gray;
             enter.BackColor = Color.Gray;
+            button18.BackColor = Color.Gray;
         }
 
         private void whiteToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -266,6 +277,7 @@ namespace Calculator
             Clear.BackColor = Color.White;
             ClearE.BackColor = Color.White;
             enter.BackColor = Color.White;
+            button18.BackColor = Color.White;
         }
 
         private void darkToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -292,6 +304,12 @@ namespace Calculator
         {
             result.BackColor = Color.AntiqueWhite;
             //equasion.BackColor = Color.AntiqueWhite;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            new Form4().Show();
+            Hide();
         }
     }
 }
