@@ -311,5 +311,98 @@ namespace Calculator
             new Form4().Show();
             Hide();
         }
+
+        private void blueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            one.BackColor = Color.DeepSkyBlue;
+            two.BackColor = Color.DeepSkyBlue;
+            three.BackColor = Color.DeepSkyBlue;
+            four.BackColor = Color.DeepSkyBlue;
+            five.BackColor = Color.DeepSkyBlue;
+            six.BackColor = Color.DeepSkyBlue;
+            seven.BackColor = Color.DeepSkyBlue;
+            eight.BackColor = Color.DeepSkyBlue;
+            nine.BackColor = Color.DeepSkyBlue;
+            zero.BackColor = Color.DeepSkyBlue;
+            plus.BackColor = Color.DeepSkyBlue;
+            minus.BackColor = Color.DeepSkyBlue;
+            div.BackColor = Color.DeepSkyBlue;
+            mul.BackColor = Color.DeepSkyBlue;
+            sqrt.BackColor = Color.DeepSkyBlue;
+            dot.BackColor = Color.DeepSkyBlue;
+            Zins.BackColor = Color.DeepSkyBlue;
+            Clear.BackColor = Color.DeepSkyBlue;
+            ClearE.BackColor = Color.DeepSkyBlue;
+            enter.BackColor = Color.DeepSkyBlue;
+            button18.BackColor = Color.DeepSkyBlue;
+            this.BackColor = Color.DarkBlue;
+            menuStrip1.BackColor = Color.DarkBlue;
+            result.BackColor = Color.DeepSkyBlue;
+            this.ForeColor = Color.AntiqueWhite;
+            result.ForeColor = Color.AntiqueWhite;
+            equasion.ForeColor = Color.Gray;
+        }
+
+        private void darkToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            one.BackColor = Color.DarkGray;
+            two.BackColor = Color.DarkGray;
+            three.BackColor = Color.DarkGray;
+            four.BackColor = Color.DarkGray;
+            five.BackColor = Color.DarkGray;
+            six.BackColor = Color.DarkGray;
+            seven.BackColor = Color.DarkGray;
+            eight.BackColor = Color.DarkGray;
+            nine.BackColor = Color.DarkGray;
+            zero.BackColor = Color.DarkGray;
+            plus.BackColor = Color.DarkGray;
+            minus.BackColor = Color.DarkGray;
+            div.BackColor = Color.DarkGray;
+            mul.BackColor = Color.DarkGray;
+            sqrt.BackColor = Color.DarkGray;
+            dot.BackColor = Color.DarkGray;
+            Zins.BackColor = Color.DarkGray;
+            Clear.BackColor = Color.DarkGray;
+            ClearE.BackColor = Color.DarkGray;
+            enter.BackColor = Color.DarkGray;
+            button18.BackColor = Color.DarkGray;
+            this.BackColor = Color.Gray;
+            menuStrip1.BackColor = Color.Gray;
+            result.BackColor = Color.DarkGray;
+            this.ForeColor = Color.Black;
+            result.ForeColor = Color.Black;
+            equasion.ForeColor = Color.AntiqueWhite;
+        }
+
+        private void whiteToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            one.BackColor = Color.White;
+            two.BackColor = Color.White;
+            three.BackColor = Color.White;
+            four.BackColor = Color.White;
+            five.BackColor = Color.White;
+            six.BackColor = Color.White;
+            seven.BackColor = Color.White;
+            eight.BackColor = Color.White;
+            nine.BackColor = Color.White;
+            zero.BackColor = Color.White;
+            plus.BackColor = Color.White;
+            minus.BackColor = Color.White;
+            div.BackColor = Color.White;
+            mul.BackColor = Color.White;
+            sqrt.BackColor = Color.White;
+            dot.BackColor = Color.White;
+            Zins.BackColor = Color.White;
+            Clear.BackColor = Color.White;
+            ClearE.BackColor = Color.White;
+            enter.BackColor = Color.White;
+            button18.BackColor = Color.White;
+            this.BackColor = Color.AntiqueWhite;
+            menuStrip1.BackColor = Color.AntiqueWhite;
+            result.BackColor = Color.White;
+            this.ForeColor = Color.Gray;
+            result.ForeColor = Color.Gray;
+            equasion.ForeColor = Color.DarkGray;
+        }
     }
 }
