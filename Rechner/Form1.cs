@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculator
@@ -15,7 +9,9 @@ namespace Calculator
         Double valuee = 0;
         String operation = "";
         bool operation_pressed = false;
-        bool sqrt_pressed = false;
+        string X = "";
+        string Y = "";
+        string Z = "";
 
         public Form1()
         {
@@ -403,6 +399,72 @@ namespace Calculator
             this.ForeColor = Color.Gray;
             result.ForeColor = Color.Gray;
             equasion.ForeColor = Color.DarkGray;
+        }
+
+        private void xToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveModeToolStripMenuItem.Checked==true)
+            {
+                X = result.Text;
+                equasion.Text = result.Text + " ist in X gespeichert";
+                operation_pressed = true;
+            }
+            else if (X == "")
+            {
+                equasion.Text = "Keine Wert in X gespeichert";
+                operation_pressed = true;
+            }
+            else
+            {
+                result.Text = X;
+            }
+        }
+
+        private void yToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveModeToolStripMenuItem.Checked == true)
+            {
+                Y = result.Text;
+                equasion.Text = result.Text + " ist in Y gespeichert";
+                operation_pressed = true;
+            }
+            else if (X == "")
+            {
+                equasion.Text = "Keine Wert in Y gespeichert";
+                operation_pressed = true;
+            }
+            else
+            {
+                result.Text = X;
+            }
+        }
+
+        private void zToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveModeToolStripMenuItem.Checked == true)
+            {
+                Z = result.Text;
+                equasion.Text = result.Text + " ist in Z gespeichert";
+                operation_pressed = true;
+            }
+            else if (X == "")
+            {
+                equasion.Text = "Keine Wert in Z gespeichert";
+                operation_pressed = true;
+            }
+            else
+            {
+                result.Text = X;
+            }
+        }
+
+        private void resetVariablesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            equasion.Text = "Variablen zurückgesetzt";
+            X = "";
+            Y = "";
+            Z = "";
+            operation_pressed = true;
         }
     }
 }
